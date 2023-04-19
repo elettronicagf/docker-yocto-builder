@@ -17,8 +17,9 @@ cd $PRG_DIR
 
 echo "Setup NXP repo"
 
-# repo init -u $NXP_MANIFEST_REPO -b $BRANCH_NXP_VERSIONE -m $MANIFEST_NXP
-# repo sync
+#cd yocto-input
+#repo init -u $NXP_MANIFEST_REPO -b $BRANCH_NXP_VERSIONE -m $MANIFEST_NXP
+#repo sync
 
 wget $FTP_URL
 tar xpvzf yocto-input.tar.gz 
