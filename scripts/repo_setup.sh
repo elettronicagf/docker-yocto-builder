@@ -24,7 +24,6 @@ echo "Setup NXP repo"
 if [ ! -d yocto-input/.repo ]; then
     wget $FTP_URL
     tar xpvzf yocto-input.tar.gz
-
     rm yocto-input.tar.gz 
 fi
 
