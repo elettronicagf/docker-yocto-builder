@@ -14,7 +14,7 @@ MANIFEST_NXP="imx-5.10.35-2.0.0.xml"
 # EGF repo configuration
 PROGETTO="0700_vega_imx8_hardknott"
 EGF_MANIFEST_REPO="git@gitrepo.egf.it:egf/meta-egf-manifest.git"
-BRANCH_EGF_MANIFEST="700_vega_imx8_hardknott"
+BRANCH_EGF_MANIFEST="0700_vega_imx8_hardknott"
 MANIFEST_EGF="manifest.xml"
 
 # EGF HTTP
@@ -26,7 +26,6 @@ DOCKER_IMAGE="egf-image-${VERSIONE}-${PROGETTO}:latest"
 
 
 # FOLDERS BINDING
-
 MNT_DIR=$(pwd | xargs  dirname )
 
 OUTPUT_SRC=${MNT_DIR}/yocto-output
