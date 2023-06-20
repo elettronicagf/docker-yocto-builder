@@ -13,7 +13,7 @@ if [ ! -f ~/bin/repo ]; then
     export PATH=$PATH:~/bin
 fi
 
-cd $PRG_DIR
+cd $MNT_DIR
 
 echo "Setup NXP repo"
 
