@@ -7,7 +7,7 @@ FROM ubuntu:18.04
 RUN export DEBIAN_FRONTEND=noninteractive && apt-get update && apt-get -y install gawk wget git-core diffstat unzip texinfo gcc-multilib \
      build-essential chrpath socat cpio python python3 python3-pip python3-pexpect \
      xz-utils debianutils iputils-ping libsdl1.2-dev python3-git python3-jinja2 xterm tar locales curl openssh-client sudo nano vim \
-     libegl1-mesa pylint3 rsync bc "linux-headers-$(uname -r)" apt-transport-https ca-certificates ftp
+     libegl1-mesa pylint3 rsync bc "linux-headers-generic" apt-transport-https ca-certificates ftp
 
 
 #sudo apt update
