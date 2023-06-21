@@ -70,7 +70,7 @@ Una volta fatto ciò fare il setup dell'ambiente di build eseguendo lo script ./
 
 <pre><code>
 cd ../../
-./setup_build.sh
+source setup_build.sh
 </code></pre>
 
 Questo ci porta direttamente nella cartella di build da cui possiamo ora eseguire il comando bitbake:
@@ -78,3 +78,5 @@ Questo ci porta direttamente nella cartella di build da cui possiamo ora eseguir
 <pre><code>
 bitbake "image-name"
 </code></pre>
+
+
