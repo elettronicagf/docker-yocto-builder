@@ -18,7 +18,7 @@ BRANCH_EGF_MANIFEST="0700_vega_imx8_hardknott"
 MANIFEST_EGF="manifest.xml"
 
 # EGF HTTP
-FTP_URL="http://mantis.elettronicagf.it/Yocto/yocto/hardknott/egf_imx8_5.10.35_2.0.0/yocto-input.tar.gz"
+FTP_URL="http://mantis.elettronicagf.it/Yocto/yocto/hardknott/yocto-input.tar.gz"
 
 
 # DOCKER
