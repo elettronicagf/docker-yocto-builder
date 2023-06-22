@@ -12,9 +12,9 @@ BRANCH_NXP_VERSIONE="imx-linux-${VERSIONE}"
 MANIFEST_NXP="imx-5.10.35-2.0.0.xml"
 
 # EGF repo configuration
-PROGETTO="0700_vega_imx8_hardknott"
-EGF_MANIFEST_REPO="git@gitrepo.egf.it:egf/meta-egf-manifest.git"
-BRANCH_EGF_MANIFEST="0700_vega_imx8_hardknott"
+PROGETTO="0701_evb_imx8_hardknott"
+EGF_MANIFEST_REPO="https://github.com/elettronicagf/meta-egf-manifest"
+BRANCH_EGF_MANIFEST="0701_evb_imx8_hardknott"
 MANIFEST_EGF="manifest.xml"
 
 # EGF HTTP
