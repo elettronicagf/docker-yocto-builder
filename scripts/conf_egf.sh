@@ -24,7 +24,7 @@ MANIFEST_EGF="manifest.xml"
 # EGF FTP
 FTP_USER=""
 FTP_PASS=""
-FTP_URL="ftp://${FTP_USER}:${FTP_PASS}@ftp.elettronicagf.it:21/yocto/${VERSIONE}/${PROGETTO}/yocto-input.tar.gz"
+FTP_URL="ftp://${FTP_USER}:${FTP_PASS}@ftp.elettronicagf.it:21/yocto/${VERSIONE}/egf_imx8_5.10.35_2.0.0/yocto-input.tar.gz"
 
 # DOCKER
 DOCKER_IMAGE="egf-image-${VERSIONE}-${PROGETTO}:latest"

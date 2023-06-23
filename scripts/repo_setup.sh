@@ -21,9 +21,13 @@ echo "Setup NXP repo"
 #repo init -u $NXP_MANIFEST_REPO -b $BRANCH_NXP_VERSIONE -m $MANIFEST_NXP
 #repo sync
 
-wget $FTP_URL
-tar xpvzf yocto-input.tar.gz 
-rm yocto-input.tar.gz 
+if [ ! -d yocto-input/.repo ]; then
+    wget $FTP_URL
+    tar xpvzf yocto-input.tar.gz
+
+    rm yocto-input.tar.gz 
+fi
+
 
 echo "Setup EGF repo"
 
@@ -42,10 +46,10 @@ repo start $B_ME  meta-egf
 repo start $B_MEC meta-egf-common
 repo start $B_MER meta-egf-release
 
-cp -r .repo    ../yocto-input/sources
-cp -r meta-egf ../yocto-input/sources
+cp -rf .repo    ../yocto-input/sources
+cp -rf meta-egf ../yocto-input/sources
 
 cd ..
 rm -rf tmp 
 
-cd  $MNT_DIR/docker
+cd  $MNT_DIR/docker-yocto-builder
