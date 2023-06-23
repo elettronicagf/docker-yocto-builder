@@ -34,16 +34,16 @@ mkdir tmp
 cd tmp
 
 python3 ~/bin/repo init -u $EGF_MANIFEST_REPO -b  $BRANCH_EGF_MANIFEST -m $MANIFEST_EGF
-~/bin/repo sync
+python3 ~/bin/repo sync
 
 # Extrating Projects revision and starting local branch
-B_ME=$(~/bin/repo info -b meta-egf |grep "Manifest revision" | awk '{print $3}')
-B_MEC=$(~/bin/repo info -b meta-egf-common |grep "Manifest revision" | awk '{print $3}')
-B_MER=$(~/bin/repo info -b meta-egf-release |grep "Manifest revision" | awk '{print $3}')
+B_ME=$( python3 ~/bin/repo info -b meta-egf |grep "Manifest revision" | awk '{print $3}')
+B_MEC=$(python3 ~/bin/repo info -b meta-egf-common |grep "Manifest revision" | awk '{print $3}')
+B_MER=$( python3 ~/bin/repo info -b meta-egf-release |grep "Manifest revision" | awk '{print $3}')
 
-~/bin/repo start $B_ME  meta-egf
-~/bin/repo start $B_MEC meta-egf-common
-~/bin/repo start $B_MER meta-egf-release
+python3 ~/bin/repo start $B_ME  meta-egf
+python3 ~/bin/repo start $B_MEC meta-egf-common
+python3 ~/bin/repo start $B_MER meta-egf-release
 
 cp -rf .repo    ../yocto-input/sources
 cp -rf meta-egf ../yocto-input/sources
